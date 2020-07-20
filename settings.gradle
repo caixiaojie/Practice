@@ -1,0 +1,7 @@
+include ':calendarview'
+include ':base_adapter'
+include ':bannerview'
+include ':picture_library'
+include ':ucrop'
+include ':app'
+rootProject.name = "Practice"
