@@ -55,9 +55,20 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-2'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-//    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.3.0'
     implementation 'androidx.navigation:navigation-ui:2.3.0'
     implementation 'com.tencent.bugly:crashreport:3.2.1'
+    //materialDialog
+    implementation project(':core')
+    implementation project(':input')
+    implementation project(':files')
+    implementation project(':color')
+    implementation project(':datetime')
+    implementation project(':bottomsheets')
+    implementation project(':lifecycle')
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.afollestad:assent:2.3.1'
+
+
 }

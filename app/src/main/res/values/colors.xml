@@ -31,4 +31,9 @@
 
     <color name="red_checked_color">#FF4C39</color>
     <color name="red_normal_color">#935656</color>
+
+    <color name="primary_custom">#607D8B</color>
+    <color name="primaryDark_custom">#546E7A</color>
+    <color name="accent_custom">#388E3C</color>
+    <color name="primary_custom_translucent">#40388E3C</color>
 </resources>

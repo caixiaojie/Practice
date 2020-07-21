@@ -1,0 +1,3 @@
+<resources>
+  <attr format="dimension" name="md_corner_radius"/>
+</resources>

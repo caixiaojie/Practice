@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.yanyu.practice.banner.activity.WelcomeActivity
+import com.yanyu.practice.materialdialog.MaterialDialogMainActivity
 import com.yanyu.practice.pictureselector.PictureMainActivity
 import com.yanyu.practice.pictureselector.SimpleActivity
 
@@ -26,5 +27,12 @@ class MainActivity : AppCompatActivity() {
      */
     fun startBanner(view: View) {
         startActivity(Intent(this,WelcomeActivity :: class.java))
+    }
+
+    /**
+     * 弹窗
+     */
+    fun startDialog(view: View) {
+        startActivity(Intent(this,MaterialDialogMainActivity :: class.java))
     }
 }

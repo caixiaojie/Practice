@@ -9,7 +9,6 @@ import androidx.viewpager2.widget.ViewPager2
 import com.yanyu.practice.banner.adapter.AdapterFragmentPager
 import com.google.android.material.navigation.NavigationView
 import com.yanyu.practice.R
-import com.yanyu.practice.banner.activity.WebViewActivity
 import kotlinx.android.synthetic.main.activity_main_banner.*
 
 

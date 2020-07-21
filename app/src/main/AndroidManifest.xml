@@ -52,6 +52,13 @@
         <activity android:name=".banner.activity.WelcomeActivity" />
         <!--banner结束-->
 
+        <!--弹窗开始-->
+        <activity
+            android:name=".materialdialog.MaterialDialogMainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--弹窗结束-->
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

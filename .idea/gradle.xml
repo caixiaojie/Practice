@@ -15,8 +15,15 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bannerview" />
             <option value="$PROJECT_DIR$/base_adapter" />
+            <option value="$PROJECT_DIR$/bottomsheets" />
             <option value="$PROJECT_DIR$/calendarview" />
+            <option value="$PROJECT_DIR$/color" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/datetime" />
+            <option value="$PROJECT_DIR$/files" />
             <option value="$PROJECT_DIR$/ideahttp" />
+            <option value="$PROJECT_DIR$/input" />
+            <option value="$PROJECT_DIR$/lifecycle" />
             <option value="$PROJECT_DIR$/picture_library" />
             <option value="$PROJECT_DIR$/ucrop" />
           </set>
