@@ -7,6 +7,7 @@ import android.view.View
 import com.yanyu.practice.banner.activity.WelcomeActivity
 import com.yanyu.practice.materialdialog.MaterialDialogMainActivity
 import com.yanyu.practice.permission.PermissionMainActivity
+import com.yanyu.practice.pickerview.PickerViewMainActivity
 import com.yanyu.practice.pictureselector.PictureMainActivity
 import com.yanyu.practice.pictureselector.SimpleActivity
 
@@ -42,5 +43,12 @@ class MainActivity : AppCompatActivity() {
      */
     fun startPermissionX(view: View) {
         startActivity(Intent(this,PermissionMainActivity :: class.java))
+    }
+
+    /**
+     * 选择器
+     */
+    fun startPickerView(view: View) {
+        startActivity(Intent(this,PickerViewMainActivity :: class.java))
     }
 }

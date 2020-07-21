@@ -31,5 +31,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PermissionX使用"/>
+
+        <Button
+            android:onClick="startPickerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PickerView使用"/>
     </LinearLayout>
 </ScrollView>

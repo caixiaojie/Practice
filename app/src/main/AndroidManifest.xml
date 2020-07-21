@@ -77,15 +77,13 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".pictureselector.SimpleActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <!--图片选择结束-->
 
         <!--banner开始-->
         <activity
             android:name=".banner.activity.WebViewActivity"
-            android:theme="@style/FullScreenTheme">
-        </activity>
+            android:theme="@style/FullScreenTheme"></activity>
         <activity android:name=".banner.activity.BannerMainActivity" />
         <activity android:name=".banner.activity.WelcomeActivity" />
         <!--banner结束-->
@@ -93,13 +91,23 @@
         <!--弹窗开始-->
         <activity
             android:name=".materialdialog.MaterialDialogMainActivity"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name"></activity>
         <!--弹窗结束-->
 
         <!--权限开始-->
-        <activity android:name=".permission.PermissionMainActivity"/>
+        <activity android:name=".permission.PermissionMainActivity" />
         <!--权限结束-->
+
+        <!--选择器开始-->
+        <activity
+            android:name=".pickerview.PickerViewMainActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".pickerview.JsonDataActivity" />
+        <activity android:name=".pickerview.FragmentTestActivity">
+
+        </activity>
+        <activity android:name=".pickerview.TestCircleWheelViewActivity" />
+        <!--选择器结束-->
 
         <activity android:name=".MainActivity">
             <intent-filter>
