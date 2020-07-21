@@ -69,6 +69,9 @@ dependencies {
     implementation project(':lifecycle')
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'com.afollestad:assent:2.3.1'
+    //权限
+//    implementation project(path: ':kotlin')
+    implementation project(path: ':library')
 
 
 }

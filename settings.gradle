@@ -1,3 +1,5 @@
+include ':library'
+include ':kotlin'
 include ':files'
 include ':input'
 include ':datetime'

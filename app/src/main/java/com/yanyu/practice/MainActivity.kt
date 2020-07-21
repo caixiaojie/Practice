@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.yanyu.practice.banner.activity.WelcomeActivity
 import com.yanyu.practice.materialdialog.MaterialDialogMainActivity
+import com.yanyu.practice.permission.PermissionMainActivity
 import com.yanyu.practice.pictureselector.PictureMainActivity
 import com.yanyu.practice.pictureselector.SimpleActivity
 
@@ -34,5 +35,12 @@ class MainActivity : AppCompatActivity() {
      */
     fun startDialog(view: View) {
         startActivity(Intent(this,MaterialDialogMainActivity :: class.java))
+    }
+
+    /**
+     * 权限
+     */
+    fun startPermissionX(view: View) {
+        startActivity(Intent(this,PermissionMainActivity :: class.java))
     }
 }
