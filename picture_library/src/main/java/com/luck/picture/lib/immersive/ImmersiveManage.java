@@ -6,6 +6,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 /**
  * @author：luck
@@ -23,7 +24,7 @@ public class ImmersiveManage {
      * @param navigationBarColor  导航栏的颜色
      * @param isDarkStatusBarIcon 状态栏图标颜色是否是深（黑）色  false状态栏图标颜色为白色
      */
-    public static void immersiveAboveAPI23(AppCompatActivity baseActivity, int statusBarColor, int navigationBarColor, boolean isDarkStatusBarIcon) {
+    public static void immersiveAboveAPI23(FragmentActivity baseActivity, int statusBarColor, int navigationBarColor, boolean isDarkStatusBarIcon) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             immersiveAboveAPI23(baseActivity, false, false, statusBarColor, navigationBarColor, isDarkStatusBarIcon);
         }
@@ -35,7 +36,7 @@ public class ImmersiveManage {
      * @param statusBarColor     状态栏的颜色
      * @param navigationBarColor 导航栏的颜色
      */
-    public static void immersiveAboveAPI23(AppCompatActivity baseActivity, boolean isMarginStatusBar
+    public static void immersiveAboveAPI23(FragmentActivity baseActivity, boolean isMarginStatusBar
             , boolean isMarginNavigationBar, int statusBarColor, int navigationBarColor, boolean isDarkStatusBarIcon) {
         try {
             Window window = baseActivity.getWindow();

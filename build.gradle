@@ -38,3 +38,17 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+ext {
+    compileSdkVersion=29
+    buildToolsVersion = '29.0.2'
+    targetSdkVersion = 29
+    minSdkVersion = 21
+    releaseVersionCode = 1
+    releaseVersionName = '1.0.0'
+
+    rxjava2Version = '2.2.0'
+    retrofit2Version = '2.9.0'
+    rxlifecycle='2.2.2'
+    gsonVersion = '2.8.0'
+    butterknifeVersion = '8.5.1'
+}

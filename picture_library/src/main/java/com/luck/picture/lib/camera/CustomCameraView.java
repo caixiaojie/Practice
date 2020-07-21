@@ -1,6 +1,8 @@
 package com.luck.picture.lib.camera;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -16,10 +18,12 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.camera.core.CameraSelector;
 import androidx.camera.core.ImageCapture;
 import androidx.camera.core.ImageCaptureException;
 import androidx.camera.core.VideoCapture;
 import androidx.camera.view.CameraView;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
@@ -88,6 +92,8 @@ public class CustomCameraView extends RelativeLayout {
     private long recordTime = 0;
     private File mVideoFile;
     private File mPhotoFile;
+    @Nullable
+    Integer mCameraLensFacing = CameraSelector.LENS_FACING_BACK;
 
     public CustomCameraView(Context context) {
         this(context, null);
@@ -136,8 +142,16 @@ public class CustomCameraView extends RelativeLayout {
                     return;
                 }
                 mPhotoFile = imageOutFile;
-                mCameraView.takePicture(imageOutFile, ContextCompat.getMainExecutor(getContext()),
-                        new MyImageResultCallback(getContext(), mConfig, imageOutFile,
+//                mCameraView.takePicture(imageOutFile, ContextCompat.getMainExecutor(getContext()),
+//                        new MyImageResultCallback(getContext(), mConfig, imageOutFile,
+//                                mImagePreview, mCaptureLayout, mImageCallbackListener, mCameraListener));
+                ImageCapture.Metadata metadata = new ImageCapture.Metadata();
+                metadata.setReversedHorizontal(
+                        mCameraLensFacing != null && mCameraLensFacing == CameraSelector.LENS_FACING_FRONT);
+                ImageCapture.OutputFileOptions outputFileOptions =
+                        new ImageCapture.OutputFileOptions.Builder(mPhotoFile).setMetadata(
+                                metadata).build();
+                mCameraView.takePicture(outputFileOptions,ContextCompat.getMainExecutor(getContext()), new MyImageResultCallback(getContext(), mConfig, imageOutFile,
                                 mImagePreview, mCaptureLayout, mImageCallbackListener, mCameraListener));
             }
 
@@ -414,6 +428,16 @@ public class CustomCameraView extends RelativeLayout {
     }
 
     public void setBindToLifecycle(LifecycleOwner lifecycleOwner) {
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         mCameraView.bindToLifecycle(lifecycleOwner);
         lifecycleOwner.getLifecycle().addObserver((LifecycleEventObserver) (source, event) -> {
 

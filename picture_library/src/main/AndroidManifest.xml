@@ -8,6 +8,7 @@
     androidx.camera.camera2,androidx.camera.lifecycle,
     androidx.camera.core" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <application>
         <provider
             android:name="com.luck.picture.lib.PictureFileProvider"
@@ -57,6 +58,7 @@
         <activity
             android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
             android:theme="@style/Base.Theme.NoActionBar" />
+        <activity android:name=".PictureBaseActivity" />
 
     </application>
 

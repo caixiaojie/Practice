@@ -13,5 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="图片选择器使用"/>
+
+        <Button
+            android:onClick="startBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="轮播图使用"/>
     </LinearLayout>
 </ScrollView>

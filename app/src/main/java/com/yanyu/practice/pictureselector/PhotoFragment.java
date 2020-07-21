@@ -51,8 +51,9 @@ import com.luck.picture.lib.tools.PictureFileUtils;
 import com.luck.picture.lib.tools.ScreenUtils;
 import com.luck.picture.lib.tools.ToastUtils;
 import com.luck.picture.lib.tools.ValueOf;
-import com.luck.pictureselector.adapter.GridImageAdapter;
-import com.luck.pictureselector.listener.DragListener;
+import com.yanyu.practice.R;
+import com.yanyu.practice.pictureselector.adapter.GridImageAdapter;
+import com.yanyu.practice.pictureselector.listener.DragListener;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -95,7 +96,7 @@ public class PhotoFragment extends Fragment implements View.OnClickListener,
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_main, container, false);
+        return inflater.inflate(R.layout.activity_main_picture_selector, container, false);
     }
 
     @Override

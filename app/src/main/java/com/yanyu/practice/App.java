@@ -1,4 +1,4 @@
-package com.yanyu.practice.pictureselector;
+package com.yanyu.practice;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,6 +11,9 @@ import com.luck.picture.lib.app.IApp;
 import com.luck.picture.lib.app.PictureAppMaster;
 import com.luck.picture.lib.crash.PictureSelectorCrashUtils;
 import com.luck.picture.lib.engine.PictureSelectorEngine;
+import com.yanyu.practice.pictureselector.PictureSelectorEngineImp;
+import com.zhpan.bannerview.utils.BannerUtils;
+import com.zhpan.idea.utils.Utils;
 
 
 /**
@@ -35,7 +38,8 @@ public class App extends Application implements IApp, CameraXConfig.Provider {
 
         });
         /** PictureSelector日志管理配制结束 **/
-
+        Utils.init(getApplicationContext());
+        BannerUtils.setDebugMode(true);
     }
 
     @Override

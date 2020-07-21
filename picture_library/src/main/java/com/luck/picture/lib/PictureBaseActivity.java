@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.luck.picture.lib.app.PictureAppMaster;
 import com.luck.picture.lib.compress.Luban;
@@ -57,13 +58,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+import static com.luck.picture.lib.immersive.ImmersiveManage.immersiveAboveAPI23;
+
 
 /**
  * @author：luck
  * @data：2018/3/28 下午1:00
  * @describe: BaseActivity
  */
-public abstract class PictureBaseActivity extends AppCompatActivity {
+public abstract class PictureBaseActivity extends FragmentActivity {
     protected PictureSelectionConfig config;
     protected boolean openWhiteStatusBar, numComplete;
     protected int colorPrimary, colorPrimaryDark;
@@ -105,7 +108,7 @@ public abstract class PictureBaseActivity extends AppCompatActivity {
 
 
     public void immersive() {
-        ImmersiveManage.immersiveAboveAPI23(this
+        immersiveAboveAPI23(this
                 , colorPrimaryDark
                 , colorPrimary
                 , openWhiteStatusBar);
