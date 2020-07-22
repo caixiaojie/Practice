@@ -37,5 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PickerView使用"/>
+
+        <Button
+            android:onClick="startUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="版本更新使用"/>
     </LinearLayout>
 </ScrollView>

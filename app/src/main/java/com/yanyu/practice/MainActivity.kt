@@ -10,6 +10,7 @@ import com.yanyu.practice.permission.PermissionMainActivity
 import com.yanyu.practice.pickerview.PickerViewMainActivity
 import com.yanyu.practice.pictureselector.PictureMainActivity
 import com.yanyu.practice.pictureselector.SimpleActivity
+import com.yanyu.practice.update.activity.UpdateMainActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,5 +51,12 @@ class MainActivity : AppCompatActivity() {
      */
     fun startPickerView(view: View) {
         startActivity(Intent(this,PickerViewMainActivity :: class.java))
+    }
+
+    /**
+     * 版本更新
+     */
+    fun startUpdate(view: View) {
+        startActivity(Intent(this,UpdateMainActivity :: class.java))
     }
 }

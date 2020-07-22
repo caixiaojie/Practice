@@ -30,6 +30,8 @@
             <option value="$PROJECT_DIR$/picture_library" />
             <option value="$PROJECT_DIR$/ucrop" />
             <option value="$PROJECT_DIR$/wheelview" />
+            <option value="$PROJECT_DIR$/xupdate-lib" />
+            <option value="$PROJECT_DIR$/xutil-core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -109,6 +109,10 @@
         <activity android:name=".pickerview.TestCircleWheelViewActivity" />
         <!--选择器结束-->
 
+        <!--版本更新开始-->
+        <activity android:name=".update.activity.UpdateMainActivity"/>
+        <!--版本更新结束-->
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

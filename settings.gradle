@@ -1,3 +1,5 @@
+include ':xutil-core'
+include ':xupdate-lib'
 include ':pickerview'
 include ':wheelview'
 include ':library'
