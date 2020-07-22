@@ -1,3 +1,6 @@
+include ':LaunchStarter'
+include ':ktx'
+include ':mvvmcore'
 include ':xutil-core'
 include ':xupdate-lib'
 include ':pickerview'
