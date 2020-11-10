@@ -20,7 +20,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -31,7 +30,6 @@
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
@@ -67,7 +65,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--图片选择开始-->
+        <activity android:name=".shapeimage.ShapeImageActivity"></activity>
+        <!-- 图片选择开始 -->
         <activity
             android:name=".pictureselector.PictureMainActivity"
             android:screenOrientation="portrait" />
@@ -77,42 +76,28 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".pictureselector.SimpleActivity"
-            android:screenOrientation="portrait"></activity>
-        <!--图片选择结束-->
-
-        <!--banner开始-->
+            android:screenOrientation="portrait" /> <!-- 图片选择结束 -->
+        <!-- banner开始 -->
         <activity
             android:name=".banner.activity.WebViewActivity"
-            android:theme="@style/FullScreenTheme"></activity>
+            android:theme="@style/FullScreenTheme" />
         <activity android:name=".banner.activity.BannerMainActivity" />
-        <activity android:name=".banner.activity.WelcomeActivity" />
-        <!--banner结束-->
-
-        <!--弹窗开始-->
+        <activity android:name=".banner.activity.WelcomeActivity" /> <!-- banner结束 -->
+        <!-- 弹窗开始 -->
         <activity
             android:name=".materialdialog.MaterialDialogMainActivity"
-            android:label="@string/app_name"></activity>
-        <!--弹窗结束-->
-
-        <!--权限开始-->
-        <activity android:name=".permission.PermissionMainActivity" />
-        <!--权限结束-->
-
-        <!--选择器开始-->
+            android:label="@string/app_name" /> <!-- 弹窗结束 -->
+        <!-- 权限开始 -->
+        <activity android:name=".permission.PermissionMainActivity" /> <!-- 权限结束 -->
+        <!-- 选择器开始 -->
         <activity
             android:name=".pickerview.PickerViewMainActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <activity android:name=".pickerview.JsonDataActivity" />
-        <activity android:name=".pickerview.FragmentTestActivity">
-
-        </activity>
-        <activity android:name=".pickerview.TestCircleWheelViewActivity" />
-        <!--选择器结束-->
-
-        <!--版本更新开始-->
-        <activity android:name=".update.activity.UpdateMainActivity"/>
-        <!--版本更新结束-->
-
+        <activity android:name=".pickerview.FragmentTestActivity"></activity>
+        <activity android:name=".pickerview.TestCircleWheelViewActivity" /> <!-- 选择器结束 -->
+        <!-- 版本更新开始 -->
+        <activity android:name=".update.activity.UpdateMainActivity" /> <!-- 版本更新结束 -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

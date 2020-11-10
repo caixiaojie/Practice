@@ -2,4 +2,15 @@
 <resources>
   <attr format="color" name="sample_button_color"/>
   <attr format="color" name="sample_button_text_color"/>
+
+  <declare-styleable name="setting_view">
+    <attr name="left_icon" format="integer"/>
+    <attr name="right_icon" format="integer"/>
+    <attr name="left_txt" format="string"/>
+    <attr name="right_txt" format="string"/>
+    <attr name="show_left_icon" format="boolean"/>
+    <attr name="show_right_icon" format="boolean"/>
+    <attr name="show_right_switch" format="boolean"/>
+    <attr name="show_line" format="boolean"/>
+  </declare-styleable>
 </resources>

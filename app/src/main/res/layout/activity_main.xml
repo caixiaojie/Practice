@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:background="@color/app_color_white">
     <LinearLayout
@@ -43,5 +44,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="版本更新使用"/>
+
+        <Button
+            android:onClick="startShapeableImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ShapeableImageView使用"/>
+
+        <com.yanyu.practice.view.ClearEditTextView
+            android:inputType="phone"
+            android:maxLength="13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.yanyu.practice.view.AgreeCheckBox
+            android:paddingStart="@dimen/dp_20"
+            android:id="@+id/mAgreeCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.yanyu.practice.view.SettingView
+            app:show_left_icon = "false"
+            app:show_right_icon= "false"
+            app:show_right_switch = "true"
+            app:left_txt = "我的收藏"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"/>
+        <com.yanyu.practice.view.SettingView
+            app:show_left_icon= "true"
+            app:show_right_icon= "true"
+            app:show_right_switch= "false"
+            app:left_txt= "我的关注"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"/>
+        <com.yanyu.practice.view.SettingView
+            app:show_left_icon= "true"
+            app:show_right_icon= "true"
+            app:show_right_switch= "false"
+            app:left_txt= "我的收藏"
+            app:right_txt="8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"/>
     </LinearLayout>
 </ScrollView>

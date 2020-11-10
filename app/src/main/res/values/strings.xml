@@ -86,7 +86,6 @@
     <string name="action_settings">Settings</string>
 
 
-
     <string name="picker_text_parse">解析数据</string>
     <string name="picker_text_show">显示省市区选择器</string>
 
@@ -102,6 +101,9 @@
     <string name="picker_non_linkage">条件选择器(不联动)</string>
 
     <string name="picker_json_parse_sample">省市区Json文件解析示例</string>
+
+
+    <string name="agreement">我已同意并阅读“用户协议”和“隐私协议”</string>
 
 
 </resources>
